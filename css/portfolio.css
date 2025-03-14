@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1F1F1F;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    background-color: #191919;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0px 3% 0 3%;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.nav-links {
+    font-family: "Major Mono Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo {
+    font-family: "Major Mono Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-section, .hero-image {
+    display: flex;
+    justify-content: center;
+    max-width: 100%; 
+    height: auto; 
+    overflow: hidden;
+}
+
+/** Portfolio **/
+
+a img {
+    width: 15rem;
+    border: 10px solid transparent;
+}
+
+#filter-buttons button {
+    border-radius: 3px;
+    background: #fff;
+    border-color: transparent;
+}
+
+#filter-buttons button:hover {
+    background: #ddd;
+}
+
+#filter-buttons button.active {
+    color: #fff;
+    background: #6c757d;
+}
+
+#filterable-cards .card {
+    width: 15rem;
+    border: 2px solid transparent;
+}
+
+#filterable-cards .card.hide {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #filterable-cards {
+    justify-content: center;
+}
+
+#filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+}
+}
+
+/* Contact Form */
+
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    width: 100%; /* Ensure the section spans the full width */
+}
+
+#contact .contact-container {
+    max-width: none; /* Remove the max-width constraint */
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  

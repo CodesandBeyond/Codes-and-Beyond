@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1F1F1F;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    background-color: #191919;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0px 3% 0 3%;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.nav-links {
+    font-family: "Major Mono Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo {
+    font-family: "Major Mono Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-section, .hero-image {
+    display: flex;
+    justify-content: center;
+    max-width: 100%; 
+    height: auto; 
+    overflow: hidden;
+}
+
+
+/* Home Page */
+
+.hero {
+    background-image: url('../img/Logo.svg'); 
+}
+
+.about-me-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    height: 100vh; /* Full viewport height */
+}
+
+.content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 700px;
+    border-radius: 500px; /* Optional: Add rounded corners to the image */
+    border: 5px solid #fff;
+}
+
+/* Contact Form */
+
+#contact {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+#contact .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
