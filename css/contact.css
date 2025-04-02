@@ -47,6 +47,7 @@ body {
 .social-icons {
     display: flex;
     gap: 15px;
+    margin-top: 10px;
 }
 
 .social-icons a {
@@ -134,6 +135,34 @@ body {
     transition:0.2s;
 }
 
+.hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 101;
+    background-color: black;
+    color: white; 
+    border: none; 
+    font-size: 24px; 
+    line-height: 30px; 
+    text-align: center; 
+}
+
+
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
 @media screen and (max-width:991px){
     .contact-parent{
         display:block;
@@ -151,5 +180,76 @@ body {
  
     .inside-contact input, .inside-contact textarea{
         background-color:#fff;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            text-align: center;
+            height: auto;
+            padding: 20px;
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+@media (max-width: 768px) {
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+    
+        .nav-links {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background: black;
+            flex-direction: column;
+            display: none;
+            align-items: center;
+            width: 100%;
+            height: 60vh;
+            text-align: center;
+            justify-content: center;
+            padding: 20px 0;
+            z-index: 100;
+        }
+    
+        .nav-links.show {
+            display: flex;
+        }
+    
+        .hamburger {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 101;
+        }
+    
+        .logo {
+            z-index: 102;
+        }
+    }
+    
+    
+@media (max-width: 480px) {
+        .nav-links {
+            font-size: 16px;
+        }
+    
+        .social-icons a {
+            font-size: 20px;
+        }
+    
+        .logo img {
+            height: 120px;
+            width: 120px;
+            margin-top: 10px;
+        }
     }
 }
